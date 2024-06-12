@@ -1,6 +1,7 @@
 require('./connection/db')
 require('dotenv').config()
 require('./services/cronJob/userSubscriptionCron')
+require('./services/cronJob/historyCron')
 
 const express = require('express')
 const cors = require('cors')

@@ -1,0 +1,135 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact Us Admin</title>
+    <style type="text/css">
+        body {
+            font-family: 'Helvetica Neue', sans-serif;
+        }
+        
+        p {
+            font-size: 16px;
+            line-height: 22px;
+            font-weight: 500;
+            margin: 10px 0px;
+        }
+        
+        .separate {
+            border: 1px solid #ffffff;
+            margin-bottom: 30px;
+            margin: 0 -19px 30px -19px;
+        }
+        
+        a {
+            text-decoration: none;
+        }
+        
+        h2 {
+            font-size: 18px;
+            color: #666666;
+        }
+        
+        .signature {
+            margin-top: 10px;
+            display: inline-block;
+        }
+        
+        .cust-details tr td {
+            padding-bottom: 7px;
+        }
+        
+        @media(max-width:767px) {
+            .mob-pad {
+                padding: 0 !important;
+            }
+            h2 {
+                font-size: 16px !important;
+                line-height: 20px !important;
+            }
+            table {
+                margin-left: 0px !important;
+                padding-bottom: 10px !important;
+            }
+            .separate {
+                margin: 0 -14px 20px -17px;
+            }
+            p {
+                text-align: justify;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <div style="padding: 50px 50px;" class="mob-pad">
+            <table cellspacing="0" width="100%" style="max-width: 610px; margin: 0 auto; border: 2px solid #f3f3f3;padding: 30px 15px 30px 15px;">
+                <tbody>
+                    <tr>
+                        <td>
+                            <table width="100%;">
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <h3 style="font-size: 16px;">Dear Admin,</h3>
+                                            <p>
+                                                <%= locals.firstName %> has submitted the contact us form from the InfosecHire website. User details are below:</p>
+                                            <table style="width: 100%;" class="cust-details">
+                                                <tbody>
+                                                    <tr>
+                                                        <td>First Name:</td>
+                                                        <td>
+                                                            <%= locals.firstName %>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Last Name:</td>
+                                                        <td>
+                                                            <%= locals.lastName %>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Email:</td>
+                                                        <td style="text-transform:lowercase">
+                                                            <a href="mailto:<%= locals.email %>" target="_blank">
+                                                                <%= locals.email %>
+                                                            </a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Contact Number:</td>
+                                                        <td>
+                                                            <%= locals.countryCode %>
+                                                                <%= locals.phone %>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Message:</td>
+                                                        <td>
+                                                            <%= locals.message %>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="signature">
+                                            <p style="margin-bottom: 4px;"><strong>Thanks,</strong></p>
+                                            <p style="margin:4px 0px 0px 0px">InfosecHire Team</p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </form>
+</body>
+
+</html>

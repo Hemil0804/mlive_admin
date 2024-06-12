@@ -1,0 +1,105 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Email Verification</title>
+    <style type="text/css">
+        body {
+            font-family: 'Helvetica Neue', sans-serif;
+            color: #000;
+        }
+        
+        p {
+            font-size: 16px;
+            line-height: 22px;
+            font-weight: 500;
+            margin: 10px 0px;
+            color: #000;
+        }
+        
+        .separate {
+            border: 1px solid #f3f3f3f3;
+            margin-bottom: 30px;
+            margin: 0 -19px 30px -19px;
+        }
+        
+        a {
+            color: #000000;
+            text-decoration: none;
+        }
+        
+        @media(max-width:767px) {
+            .mob-pad {
+                padding: 0 !important;
+            }
+            h2 {
+                font-size: 16px !important;
+                line-height: 20px !important;
+            }
+            table {
+                margin-left: 0px !important;
+                padding-bottom: 10px !important;
+            }
+            .separate {
+                margin: 0 -14px 20px -17px;
+            }
+            p {
+                text-align: justify;
+            }
+            .logo {
+                width: 150px !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <div style="padding: 50px 50px;" class="mob-pad">
+            <table cellspacing="0" width="100%" style="max-width: 610px; margin: 0 auto; border: 2px solid #f3f3f3;padding: 30px 15px 50px 15px;">
+                <tbody>
+                    <tr>
+                        <td>
+                            <table width="100%;" style="margin-left: 10px;">
+                                <tbody>
+                                    <tr>
+                                        <div style="padding-bottom:20px; text-align: center">
+                                            <img src="<%=locals.imageLink%>" class="logo">
+                                        </div>
+
+                                    </tr>
+
+                                    <div class="separate"></div>
+                                    <tr>
+                                        <td>
+                                            <!--<h2 style="line-height: 26px;font-size: 20px;color: #4c4c4c;font-weight: 700;">Email Verification</h2>-->
+                                            <h3 style="font-size: 17px;color: #222;">Dear
+                                                <%= locals.username %>,</h3>
+                                            <p style="color: #222;">You are receiving this email because we received a request to email verification for your account.</p>
+                                            <p>To verify your email address use this security code :
+                                                <%= locals.otp %>
+                                            </p>
+                                            <p style="color: #222;">If you did not request to email verification, no further action is required.</p>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="signature" style="padding-top:30px;">
+                                            <p style="margin-bottom: 4px;"><strong>Thanks,</strong></p>
+                                            <p style="margin:4px 0px 0px 0px">InfosecHire Team</p>
+
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,126 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Welcome To InfosecHire</title>
+    <style type="text/css">
+        body {
+            font-family: 'Helvetica Neue', sans-serif;
+            color: #000;
+        }
+        
+        p {
+            font-size: 16px;
+            line-height: 22px;
+            font-weight: 500;
+            margin: 10px 0px;
+            color: #000;
+        }
+        
+        .separate {
+            border: 1px solid #f3f3f3f3;
+            margin-bottom: 30px;
+            margin: 0 -19px 30px -19px;
+        }
+        
+        a {
+            text-decoration: none;
+        }
+        
+        h2 {
+            font-size: 18px;
+            color: #666666;
+        }
+        
+        .signature {
+            margin-top: 10px;
+            display: inline-block;
+        }
+        
+        .common-btn {
+            font-weight: 400;
+            font-size: 18px;
+            color: #ffffff;
+            background: #002a3a;
+            border-radius: 5px;
+            border: none;
+            display: flex;
+            padding: 14px 30px;
+            margin: 20px auto 0px;
+            cursor: pointer;
+            transition: all .3s ease;
+            justify-content: center;
+            align-items: center;
+            max-width: 100px;
+        }
+        
+        @media(max-width:767px) {
+            .mob-pad {
+                padding: 0 !important;
+            }
+            h2 {
+                font-size: 16px !important;
+                line-height: 20px !important;
+            }
+            table {
+                margin-left: 0px !important;
+                padding-bottom: 10px !important;
+            }
+            .separate {
+                margin: 0 -14px 20px -17px;
+            }
+            p {
+                text-align: justify;
+            }
+            .logo {
+                width: 150px !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <div style="padding: 50px 50px;" class="mob-pad">
+            <table cellspacing="0" width="100%" style="max-width: 610px; margin: 0 auto; border: 2px solid #f3f3f3;padding: 30px 15px 30px 15px;">
+                <tbody>
+                    <tr>
+                        <td>
+                            <table width="100%;">
+                                <tbody>
+                                    <tr>
+                                        <div style="padding-bottom:20px; text-align: center">
+                                            <img src="<%= locals.imageLink %>" alt="logo" class="logo">
+                                        </div>
+
+                                    </tr>
+                                    <div class="separate"></div>
+                                    <tr>
+                                        <td>
+                                            <h3 style="font-size: 16px;"> Hello
+                                                <%= locals.username %>,</h3>
+                                            <p>Welcome to InfosecHire!</p>
+                                            <p>We're thrilled for you to join InfosecHire. You are the newest customer on our portal.</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="signature">
+                                            <p style="margin-bottom: 4px;"><strong>Thanks,</strong></p>
+                                            <p style="margin:4px 0px 0px 0px">InfosecHire Team</p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        </div>
+    </form>
+</body>
+
+</html>

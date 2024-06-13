@@ -103,6 +103,9 @@ app.use("/admin/script", scriptAdmin);
 const dashboard = require("./routes/admin/dashboard.route");
 app.use("/admin/dashboard", dashboard);
 
+const alert = require("./routes/admin/alert.route");
+app.use("/admin/alert", alert);
+
 const closingRate = require("./routes/admin/closingRate.route");
 app.use("/admin/closing-rate", closingRate);
 

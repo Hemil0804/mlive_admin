@@ -179,5 +179,6 @@
 	"validationSymbolBase": "Please enter valid symbol",
 	"validationExpiryDateRequired": "Expiry date is required",
 	"validationExpiryDateBase": "Please enter valid expiry date",
-	"dataNotFound": "Data not found"
+	"dataNotFound": "Data not found",
+	"AlertListFoundSuccessfully": "Alert list found successfully"
 }

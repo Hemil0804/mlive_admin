@@ -3,6 +3,7 @@ const cron = require("node-cron");
 const moment = require("moment")
 const scriptHistoryModel = require("../../models/scriptHistory.model");
 const scriptModel = require("../../models/script.model");
+const userAlertModel = require("../../models/userAlert.model");
 cron.schedule('30 10 * * *', async () => {
     console.log('Running a task daily at 12:30 AM');
 // cron.schedule('*/5 * * * * *', async () => {
